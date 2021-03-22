@@ -9,7 +9,7 @@ class Home extends Component {
         super(props);
         this.state = {
             AppID: 'cbad1d99806749848b7c7b11995e0a8d',                    //Set your APPID here
-            ChannelName: '',                                  //Set a default channel or leave blank
+            ChannelName: '1',                                  //Set a default channel or leave blank
         };
         if (Platform.OS === 'android') {                    //Request required permissions from Android
             requestCameraAndAudioPermission().then(_ => {
@@ -29,7 +29,7 @@ class Home extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.formLabel}>App ID</Text>
+                {/* <Text style={styles.formLabel}>App ID</Text>
                 <TextInput
                     style={styles.formInput}
                     onChangeText={(AppID) => this.setState({ AppID })}
@@ -40,7 +40,7 @@ class Home extends Component {
                     style={styles.formInput}
                     onChangeText={(ChannelName) => this.setState({ ChannelName })}
                     value={this.state.ChannelName}
-                />
+                /> */}
                 <View style={styles.buttonContainer}>
                     <TouchableOpacity
                         title="Start Call!"
