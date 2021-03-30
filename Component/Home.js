@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         marginTop: 0,
         padding: 20,
         flex: 1,
-        backgroundColor: '#ffffff',
+        backgroundColor: '#b0b0b0',
     },
     formLabel: {
         paddingBottom: 10,
