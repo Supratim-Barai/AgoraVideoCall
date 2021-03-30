@@ -47,7 +47,7 @@ class Home extends Component {
                         onPress={this.handleSubmit}
                         style={styles.submitButton}
                     >
-                        <Text style={{ color: '#ffffff' }}> Start Call </Text>
+                        <Text style={{ color: '#ffffff',fontWeight:"bold",padding:5 }}> Start Call </Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     formLabel: {
         paddingBottom: 10,
         paddingTop: 10,
-        color: '#0093E9',
+        color: '#0093E0',
     },
     buttonContainer: {
         alignItems: 'center',
